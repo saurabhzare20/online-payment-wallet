@@ -1,0 +1,15 @@
+
+FROM openjdk
+
+
+
+WORKDIR /app
+
+
+COPY ./validateTransaction.jar .
+
+
+EXPOSE 1113
+
+
+CMD ["java", "-jar", "logs.jar"]
